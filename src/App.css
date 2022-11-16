@@ -1,0 +1,145 @@
+.hero {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+/* nav {
+  position: absolute;
+  top: -5rem;
+
+} */
+
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+  url(../src/images/bg-images/venon-.png); */
+
+.container-fluid {
+  min-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.story-card {
+  overflow: hidden;
+  min-width: 30%;
+  max-height: 400px;
+}
+
+.story-card-img {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.story-card-video {
+  width: 80%;
+  margin-left: 13%;
+  margin-top: 16%;
+}
+
+.story-card2 {
+  min-width: 30%;
+  max-height: 500px;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+
+.story-card2-img {
+  width: 100%;
+}
+
+.box-item {
+  margin: 0 auto;
+  margin-top: -25%;
+  border-width: 2px;
+  border-color: #333;
+}
+
+/* .sliderImg {
+  width: 110vw;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
+} */
+
+.imageActive {
+  min-width: 100vw;
+  min-height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  object-fit: cover;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: blender 7s linear 50ms;
+}
+
+@keyframes blender {
+  0% {
+    opacity: 0;
+    transform: translate(-10px);
+    scale: 1;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0px);
+    scale: 1.05;
+  }
+}
+
+.image {
+  display: none;
+}
+
+.accordion {
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  background-color: #303030;
+}
+
+.accordion_hidden {
+  user-select: none;
+  cursor: pointer;
+}
+
+.accordion-items {
+  border-bottom: 0.7rem solid #000;
+}
+
+.accordion-items .active {
+  max-height: 700px;
+}
+
+.accordion-p {
+  color: #fff;
+  font-size: 1.625rem;
+  border-top: 1px solid #000;
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s ease;
+}
+
+/* .accordionBody { */
+/* border-top: 2px solid black; */
+/* border: 1px solid #ccc;
+} */
+
+/* .btn-icon {
+  margin-left:65%;
+} */
