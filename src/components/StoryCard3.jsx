@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { motion } from "framer-motion";
+import { Context } from "../App";
 
 const StoryCard3 = () => {
+  const { mediaAnimation, textAnimation } = useContext(Context);
+
   return (
     <div className="container-fluid flex flex-wrap-reverse justify-center items-center sd:gap-60 gap-4  bg-black p-16">
-      <div className="xl:text-left text-center">
+      <motion.div
+        initial={"offScreen"}
+        whileInView={"onScreen"}
+        viewport={{ once: true, amount: 0.9 }}
+        variants={textAnimation}
+        className="xl:text-left text-center"
+      >
         <h1 className="md:font-bold text-3xl sm:text-5xl">
           Create profiles for kids.
         </h1>
@@ -12,10 +22,16 @@ const StoryCard3 = () => {
           space made just for them— <br />
           free with your membership.
         </p>
-      </div>
-      <div className="story-card2">
+      </motion.div>
+      <motion.div
+        initial={"offScreen"}
+        whileInView={"onScreen"}
+        viewport={{ once: true, amount: 0.9 }}
+        variants={mediaAnimation}
+        className="story-card2"
+      >
         <img src="images/cn.png" alt="cn" />
-      </div>
+      </motion.div>
     </div>
   );
 };

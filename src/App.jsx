@@ -9,7 +9,34 @@ import Login from "./pages/Login";
 
 const bgimgs = ["witcher.jpg", "batman.jpg", "venon.png"];
 
-export const faqContext = createContext();
+export const Context = createContext();
+
+export const mediaAnimation = {
+  offScreen: { x: 100, opacity: 0 },
+  onScreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.6,
+      delay: 0.3,
+      duration: 3,
+    },
+  },
+};
+
+export const textAnimation = {
+  offScreen: { y: 100, opacity: 0 },
+  onScreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.6,
+      duration: 3,
+    },
+  },
+};
 
 function App() {
   const [query, setQuery] = useState(0);
@@ -33,10 +60,12 @@ function App() {
 
   const faqContextValue = {
     faq,
+    mediaAnimation,
+    textAnimation,
   };
 
   return (
-    <faqContext.Provider value={faqContextValue}>
+    <Context.Provider value={faqContextValue}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className="hero">
           <nav className="w-full absolute top-0 h-20 backdrop-blur-sm z-40 p-4 px-6 flex items-center justify-between">
@@ -81,7 +110,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </motion.div>
-    </faqContext.Provider>
+    </Context.Provider>
   );
 }
 

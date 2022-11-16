@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import { HiOutlinePlus, HiOutlineX } from "react-icons/hi";
-import { faqContext } from "../App";
+import { Context } from "../App";
 
 const Accordion = () => {
-  const { faq } = useContext(faqContext);
+  const { faq } = useContext(Context);
 
   const [accordion, setAccordion] = useState(-1);
 
