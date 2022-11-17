@@ -10,7 +10,7 @@ const StoryCard2 = () => {
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={"onScreen"}
-        viewport={{ once: true, amount: 0.9 }}
+        viewport={{ once: true, amount: 0.5 }}
         variants={mediaAnimation}
         className="story-card2"
       >
