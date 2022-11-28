@@ -6,13 +6,13 @@ const StoryCard2 = () => {
   const { mediaAnimation, textAnimation } = useContext(Context);
 
   return (
-    <div className="container-fluid  flex flex-wrap justify-center sd:gap-60 gap-4 items-center bg-black p-10 sm:pb-16 pb-4">
+    <div className="container-fluid  flex flex-wrap justify-center gap-10 items-center bg-black p-10 sm:pb-16 pb-4">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={"onScreen"}
         viewport={{ once: true, amount: 0.5 }}
         variants={mediaAnimation}
-        className="story-card2"
+        className="story-card2 "
       >
         <img src="images/enola.jpg" alt="enola" />
 
@@ -38,7 +38,7 @@ const StoryCard2 = () => {
         whileInView={"onScreen"}
         viewport={{ once: true, amount: 0.9 }}
         variants={textAnimation}
-        className="xl:text-left text-center z-50"
+        className="xl:text-left text-center z-50 "
       >
         <h1 className="md:font-bold text-3xl sm:text-5xl">
           Download your shows <br />

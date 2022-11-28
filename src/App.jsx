@@ -58,14 +58,14 @@ function App() {
     }, 7000);
   }, [query]);
 
-  const faqContextValue = {
+  const ContextValue = {
     faq,
     mediaAnimation,
     textAnimation,
   };
 
   return (
-    <Context.Provider value={faqContextValue}>
+    <Context.Provider value={ContextValue}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className="hero">
           <nav className="w-full absolute top-0 h-20 backdrop-blur-sm z-40 p-4 px-6 flex items-center justify-between">

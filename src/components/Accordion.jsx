@@ -15,6 +15,7 @@ const Accordion = () => {
     setAccordion(index);
   }
 
+
   return (
     <>
       <div className="container-fluid pb-10  bg-black">
@@ -26,6 +27,7 @@ const Accordion = () => {
           {faq.map((item, index) => (
             <div className="accordion-items" key={index}>
               <div
+                // value={accordion}
                 onClick={() => toggleAccordion(index)}
                 className="accordion_hidden flex items-center justify-between px-8 py-4 collapse-title"
               >

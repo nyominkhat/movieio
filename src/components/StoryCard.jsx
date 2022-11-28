@@ -6,7 +6,7 @@ const StoryCard = () => {
   const { mediaAnimation, textAnimation } = useContext(Context);
 
   return (
-    <div className="container-fluid flex flex-wrap justify-center md:gap-40 gap-4 items-center bg-black sm:p-12 p-4">
+    <div className="container-fluid flex flex-wrap-reverse justify-center gap-10 items-center bg-black sm:pb-16 pb-4">
       <motion.div
         initial={"offScreen"}
         whileInView={"onScreen"}
