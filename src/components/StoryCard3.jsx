@@ -30,7 +30,7 @@ const StoryCard3 = () => {
         variants={mediaAnimation}
         className="story-card2"
       >
-        <img src="images/cn.png" alt="cn" />
+        <img src="images/cn.avif" alt="cn" />
       </motion.div>
     </div>
   );

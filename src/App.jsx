@@ -7,7 +7,7 @@ import BackgroundSlider from "./components/BackgroundSlider";
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
 
-const bgimgs = ["witcher.jpg", "batman.jpg", "venon.png"];
+const bgimgs = ["witcher.avif", "batman.avif", "venon.avif"];
 
 export const Context = createContext();
 
@@ -43,7 +43,7 @@ function App() {
   const [faq, setFaq] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/FAQ")
+    fetch("https://my-json-server.typicode.com/nyominkhat/movieio/FAQ")
       .then((res) => res.json())
       .then((data) => setFaq(data));
   }, []);

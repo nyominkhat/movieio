@@ -30,7 +30,7 @@ const StoryCard = () => {
         variants={mediaAnimation}
         className="story-card  relative mb-8"
       >
-        <img className="story-card-img" src="images/tv.png" />
+        <img className="story-card-img" src="images/tv.avif" />
 
         <video loop autoPlay muted className="story-card-video">
           <source src="videos/story-card.mp4" type="video/mp4" />

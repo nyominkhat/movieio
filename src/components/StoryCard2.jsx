@@ -14,7 +14,7 @@ const StoryCard2 = () => {
         variants={mediaAnimation}
         className="story-card2 "
       >
-        <img src="images/enola.jpg" alt="enola" />
+        <img src="images/enola.avif" alt="enola" />
 
         <div className="box-item w-3/5 p-2 sm:h-28 h-16 drop-shadow-md flex justify-between rounded-xl items-center bg-black ">
           <div className="flex z-40 gap-2 items-center">
