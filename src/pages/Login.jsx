@@ -16,7 +16,7 @@ const Login = () => {
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ delay: 0.3 }}
-          className="mx-auto   my-auto sm:pb-32 sm:p-6 p-4  bg-black border border-slate-700 bg-opacity-70 rounded "
+          className="mx-auto   my-auto sm:pb-20  sm:p-6 p-4  bg-black border border-slate-700 bg-opacity-70 rounded "
         >
           <h1 className="text-white text-4xl">Sign In</h1>
 
