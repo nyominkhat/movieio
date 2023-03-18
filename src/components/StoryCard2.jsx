@@ -18,7 +18,7 @@ const StoryCard2 = () => {
 
         <div className="box-item w-3/5 p-2 sm:h-28 h-16 drop-shadow-md flex justify-between rounded-xl items-center bg-black ">
           <div className="flex z-40 gap-2 items-center">
-            <img className="md:w-14 w-10" src="images/boxshot.png" />
+            <img className="md:w-14 w-10" src="images/boxshot.avif" />
             <p className="sm:font-semibold sm:text-lg text-xs font-medium sm:tracking-wide tracking-tighter">
               Stranger Things <br />
               <span className="text-xs text-blue-500">Downloading...</span>
