@@ -20,7 +20,7 @@
 
 1. Clone the repository and change directory.
 ```
-git clone https://github.com/nyominkhat/Pok-mon.git
+git clone https://github.com/nyominkhat/movieio.git
 cd Pok-mon 
 ```
 
